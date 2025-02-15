@@ -21,12 +21,4 @@ abstract class UserUpdateDTO extends UserDTO implements UpdateDTOInterface
             password: $password,
         );
     }
-
-    public function toArray(): array
-    {
-        return [
-            'name' => $this->getName(),
-            'email' => $this->getEmail(),
-        ];
-    }
 }
